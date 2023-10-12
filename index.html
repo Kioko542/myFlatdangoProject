@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <title>flatadango</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <div class="con1">
+        <h1>Movie List</h1>
+        <ul id="films">
+          <!-- Films will be added here dynamically -->
+        </ul>
+      </div>
+      <div class="con2">
+        <h1>Movie Details</h1>
+        <div id="movie-details">
+            <div class="sec2">
+          <img id="movie-poster" src="" alt="Movie Poster" />
+          <h2 id="movie-title"></h2>
+          <p id="movie-runtime"></p>
+          <p id="movie-showtime"></p>
+          <p id="available-tickets"></p>
+        </div>
+          <div class="btn">
+            <button id="buy-ticket">Buy Ticket</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

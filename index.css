@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    gap:2rem;
+    margin: auto;
+}
+#movie-details img{
+    height: 70vh;
+    width: 800px;
+    object-fit: cover;
+    object-position: center;
+}
+.con1{
+    background-color: rgba(0, 0, 0, 0.151);
+    text-align: center;
+    display: block;
+    height: 60vh;
+}
+.con1 h1{
+    color:  rgb(77, 77, 182);
+    padding: 20px 0;
+}
+#films{
+    overflow: scroll;
+    height: 60vh;
+}
+#films  li{
+    list-style-type: none;
+    padding: 15px;
+    display: block;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+#films li:hover{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.247);
+    color: white;
+    transition: 2s ease-in;
+}
+#movie-details{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+.btn{
+    padding: 30px 0;
+ 
+}
+.btn button{
+    background: none;
+    color: blue;
+    padding: 20px 50px;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 30px;
+}
+@media screen and (max-width: 768px) {
+    body{
+        padding: 15px;
+    }
+   .container{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+   }
+   #movie-details{
+    display: flex;
+    flex-direction: column;
+   }
+   #movie-details img{
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+   }
+   #btn button{
+    padding: 10px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+    body{
+        padding: 25px;
+    }
+   .container{
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+   }
+   #movie-details{
+    display: flex;
+    flex-direction: column;
+   }
+   #movie-details img{
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+   }
+   #btn button{
+    padding: 10px;
+   }
+    /* Add other styles for small screens here */
+}
